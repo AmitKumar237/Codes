@@ -1,12 +1,11 @@
 class Solution {
     public int countGoodSubstrings(String s) {
         int ans = 0;
-        int i = 0 , j = 2;
+        int j = 2;
         while(j < s.length()){
             if(check(s,j))
                 ans++;
             j++;
-            i++;
         }
         return ans;
     }
